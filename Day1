@@ -1,0 +1,44 @@
+//CONVERTING THE 1D ARRAY INTO 2D ARRAY//
+
+class Solution {
+    public int[][] construct2DArray(int[] original, int m, int n) {
+ if(original.length!=m*n){
+ return new int[0][0];
+
+ }
+  int array[][]=new int[m][n];
+
+ int i,j;
+ int idx=0;
+ for(i=0;i<m;i++){
+    for(j=0;j<n;j++){
+    array[i][j]=original[idx++];
+
+    }
+
+ }
+ return array;
+ }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+---Input---
+original =
+[1,2,3,4]
+m =
+2
+n =
+2
+---Output---
+[[1,2],[3,4]]
+
