@@ -20,7 +20,7 @@ public:
         }
     }
 };
-Input:
+---Input---
 x =121
-Output:
+---Output---
 true
