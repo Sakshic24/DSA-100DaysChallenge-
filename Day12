@@ -1,0 +1,31 @@
+// Write a Java program to display n terms of natural numbers and their sum //
+
+import java.util.Scanner;
+class HelloWorld {
+    public static void main(String[] args) {
+        int sum=0;
+        int n;
+       Scanner input  = new Scanner(System.in);
+       n=input.nextInt();
+       System.out.printf("the number is %d: \n" ,n);
+       for(int i=1;i<n;i++){
+           System.out.println(i);
+            sum= sum+i;
+           
+       }
+       System.out.printf("The Sum of Natural Number upto "+ n +"terms is:");
+       System.out.println(sum);
+        
+    }
+}
+
+//     OUTPUT       //
+
+4
+the number is 4: 
+1
+2
+3
+The Sum of Natural Number upto 4terms is:6
+
+=== Code Execution Successful ===
