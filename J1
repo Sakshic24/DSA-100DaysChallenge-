@@ -1,0 +1,50 @@
+Input:
+2
+3
+Expected Output:
+Default Rectangle: L, W, A : 1.0, 1.0, 1.0\n
+Parameterised Rectangle: L, W, A : 2.0, 3.0, 6.0
+_________________________________________________________________________________________________________________________________________________________________________________________________________________
+import java.util.Scanner;
+
+class Rectangle{
+    double length;
+    double breadth;
+public Rectangle(){
+    this.length=1;
+    this.breadth=1;
+}
+public Rectangle(double length, double breadth){
+    this.length=length;
+    this.breadth=breadth;
+}
+public double  getLength(){
+    return length;
+}
+public  double getBreadth(){
+    return breadth;
+}
+public double getArea(){
+    return length*breadth;
+}
+}
+public class Q{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+        
+                System.out.println("Enter length and breadth:" );
+        double length= s.nextDouble();
+        double breadth= s.nextDouble();
+        
+        Rectangle r1 = new Rectangle();
+        System.out.println("Default Rectangle: L, W, A :" );
+        System.out.println(r1.getLength() +","+ r1.getBreadth() +","+
+        r1.getArea());
+        Rectangle r2 = new Rectangle(length, breadth);
+                System.out.println("Parameterised Rectangle: L, W, A :" );
+      
+        System.out.println(r2.getLength() +","+ r2.getBreadth() +","+
+        r2.getArea());
+        s.close();
+    }
+}
