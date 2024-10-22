@@ -1,0 +1,32 @@
+//Create a class Circle that encapsulates the properties of a circle.
+
+The class should have a private field for the radius, a constructor to initialize the radius, and methods to calculate the area and circumference of the circle.//
+______________________________________________________________________________________________________________________________________________________________________________________________________________________
+import java.util.Scanner;
+class Circle{
+    double radius;
+    public  Circle(double radius){
+        this.radius=radius;
+    }
+    public  double CalculateArea(){
+        return Math.PI*radius*radius;
+    }
+    public  double CalculateCircumference(){
+        return 2*Math.PI*radius;
+    }
+    
+}
+public class Q{
+    public static void main(String[] args){
+        Scanner s = new Scanner(System.in);
+                System.out.printf("Enter the radius of the circle:");
+        double radius = s.nextDouble();
+        Circle c = new Circle(radius);
+                double area = c.CalculateArea();
+        System.out.printf("Area: %.2f\n", area);
+        double circumference = c.CalculateCircumference();
+       
+        System.out.printf("Circumference: %.2f", circumference);
+        s.close();
+    }
+}
